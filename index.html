@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Rick and Morty</title>
+    <link rel="icon" href="/img/rick-and-morty-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo" src="/img/rick-and-morty-icon.png" alt="Logo Rick and Morty" srcset="">
+        </div>
+        <h1 class="title">API de Rick and Morty</h1>
+        <div id="container-filter">
+            <input class="input-filter" type="text" id="filter" placeholder="Pesquisar personagem">
+            <button id="button-filter">
+                <img class="img-filter" src="/img/magnifying-glass-solid.svg" alt="Pesquisar">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div id="container-card">
+        </div>
+        <div class="pagination">
+            <button id="prevPage">Anterior</button>
+            <button id="nextPage">Próxima</button>
+        </div>
+    </main>
+    <footer>
+        <img class="img-footer" src="/img/rick-and-morty-logo.png" alt="Imagem de Rick and Morty">
+        <div id="container-footer">
+            <div id="info-api">
+            </div>
+            <div id="info-developer">
+                <p class="developer-text">Desenvolvido por: <span class="developer-name">Alexsandro da Rocha</span> em
+                    2023</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+:root {
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    --color-st: #1f2821;
+    --color-nd: #105718;
+    --color-rd: #56CD42;
+    --color-gray-primary: #909090;
+    --color-gray-secondary: grey;
+    --color-default: black;
+  }
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.logo {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 30px;
+    height: 30px;
+}
+
+.title {
+    font-size: 48px;
+    color: var(--color-nd);
+    margin-bottom: 15px;
+}
+
+#container-filter {
+    width: 520px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #a2a2a288;
+    border-radius: 10px;
+    padding: 2px;
+
+}
+
+.input-filter {
+    border: none;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.input-filter::placeholder {
+    color: #a2a2a288;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+#button-filter {
+    border: none;
+    background: #ffffff;
+}
+
+/* main */
+
+#container-card {
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 0 7rem;
+    max-width: 1200px;
+}
+
+.card {
+    display: flex;
+    border-radius: 15px;
+    max-height: 200px;
+    height: max-content;
+    margin-top: 5rem;
+    min-width: 500px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.img-character {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.info-character {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.character-title {
+    margin: 0;
+    color: var(--color-nd);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.character-sub-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.info-character p {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-gray-primary);
+    margin-bottom: 0;
+}
+
+.status-character {
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.Vivo {
+    background-color: var(--color-rd);
+}
+
+.Morto {
+    background-color: red;
+}
+
+.Desconhecido {
+    background-color: var(--color-gray-primary);
+}
+
+/* paginação */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 3rem;
+  }
+  
+  /* Estilo para os botões de página */
+  .pagination button {
+    background-color: #ffffff;
+    color: var(--color-rd);
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Estilo para o botão de página ativa */
+  .pagination button.active {
+    background-color: var(--color-st);
+  }
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.img-footer {
+    width: 400px;
+    height: 400px;
+}
+
+#container-footer {
+    background-color: var(--color-st);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#info-api {
+    display: flex;
+    margin-top: 3rem;
+    font-weight: 500;
+}
+
+.info-text {
+    padding: 0 1em;
+    color: var(--color-gray-primary);
+    
+}
+
+#info-developer {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    color: var(--color-gray-primary);
+    font-weight: 500;
+}
+
+.developer-name {
+    font-weight: 700;
+}
+
